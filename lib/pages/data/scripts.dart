@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'dart:io';
@@ -108,13 +107,11 @@ class MyScripts {
       final urlAndroid = Uri.parse(
           'whatsapp://send?phone=$telefone&text=${Uri.encodeFull(msg)}');
       if (await launchUrl(urlAndroid)) {
-        debugPrint('Android Right !');
       }
     } else {
       final urlIos =
           Uri.parse('whatsapp://wa.me/$telefone/?text=${Uri.encodeFull(msg)}');
       if (await launchUrl(urlIos)) {
-        debugPrint('Ios Right !');
       }
     }
   }
