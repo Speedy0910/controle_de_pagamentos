@@ -81,8 +81,6 @@ class _DeletarDadosState extends State<DeletarDados> {
                             ScriptsDataBase().deletFileScript(
                                 nomeTabela: _turmaSelecionada(),
                                 id: idSelecionado[0]);
-                            debugPrint(
-                                '${_turmaSelecionada()}, ${idSelecionado[0]}');
                             _sucessDelet(
                                 context: context, aluno: informacoes[0]);
                           }

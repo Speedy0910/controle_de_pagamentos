@@ -130,7 +130,6 @@ class _HomePageState extends State<CadastroMaternalII> {
                                     informacoes.add(gerente.paymentNovembro);
                                     informacoes.add(gerente.paymentDezembro);
                                     // #endregion
-                                    debugPrint('$id');
                                     context.pushNamed('/AcessarDados');
                                   },
                                   child: Text(
