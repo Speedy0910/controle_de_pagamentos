@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.controle_de_pagamentos">
    <application
-        android:label="controle_de_pagamentos"
+        android:label="Construindo Saberes"
         android:name="${applicationName}"
         android:icon="@mipmap/launcher_icon">
         <activity
