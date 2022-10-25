@@ -1,4 +1,3 @@
-import 'package:build_context/build_context.dart';
 import 'package:controle_de_pagamentos/pages/data/constantes.dart';
 import 'package:controle_de_pagamentos/themes/temas.dart';
 import 'package:controle_de_pagamentos/widgets/my_widgets.dart';
@@ -52,16 +51,16 @@ class _EscolherTurmaState extends State<EscolherTurma> {
                             turmaSelecionada.add(allTurmas[index]);
                             switch (turmaSelecionada[0]) {
                               case 'MTI':
-                                context.pushNamed('/MaternalI');
+                                Navigator.pushNamed(context, '/MaternalI');
                                 break;
                               case 'MTII':
-                                context.pushNamed('/MaternalII');
+                                Navigator.pushNamed(context, '/MaternalII');
                                 break;
                               case 'JDI':
-                                context.pushNamed('/JardimI');
+                                Navigator.pushNamed(context, '/JardimI');
                                 break;
                               case 'JDII':
-                                context.pushNamed('/JardimII');
+                                Navigator.pushNamed(context, '/JardimII');
                                 break;
                             }
                           },

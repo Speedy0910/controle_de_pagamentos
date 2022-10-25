@@ -4,7 +4,6 @@ import 'package:controle_de_pagamentos/pages/data/temporary/modelo_de_impressao.
 import 'package:controle_de_pagamentos/themes/temas.dart';
 import 'package:controle_de_pagamentos/widgets/my_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:build_context/build_context.dart';
 
 class PagamentosPendentesJDI
  extends StatefulWidget {
@@ -29,7 +28,7 @@ class _HomePageState extends State<PagamentosPendentesJDI
           actions: [
             IconButton(
                 onPressed: () {
-                  context.pop();
+                  Navigator.pop(context);
                 },
                 icon: const Icon(Icons.arrow_back))
           ],

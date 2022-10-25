@@ -3,7 +3,6 @@ import 'package:controle_de_pagamentos/pages/data/database.dart';
 import 'package:controle_de_pagamentos/pages/gerenciador/gerencia.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
-import 'package:build_context/build_context.dart';
 import '../../../themes/temas.dart';
 
 final gerente = Gerencia();
@@ -28,7 +27,7 @@ class AdicionarNovoCadastro extends StatelessWidget {
         actions: [
           IconButton(
               onPressed: () {
-                context.pop();
+                Navigator.pop(context);
               },
               icon: const Icon(Icons.arrow_back))
         ],
@@ -150,6 +149,6 @@ class AdicionarNovoCadastro extends StatelessWidget {
       '${gerente.nomeResponsavel} responsável de ${gerente.nomeAluno} cadastrado com sucesso!',
       style: Temas().styleLetras(),
     )));
-    _context.pop();
+    Navigator.pop(_context);
   }
 }

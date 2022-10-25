@@ -1,7 +1,7 @@
 import 'package:controle_de_pagamentos/pages/app_pages/criar_cadastro/novo_cadastro.dart';
 import 'package:controle_de_pagamentos/widgets/my_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:build_context/build_context.dart';
+
 import '../../themes/temas.dart';
 
 class InitialPage extends StatelessWidget {
@@ -48,7 +48,7 @@ class InitialPage extends StatelessWidget {
                     gerente.atualizarTelefone(telefone: '');
                     gerente.atualizarNomeCompletoAluno(nome: '');
                     gerente.atualizarTurma(turma: '');
-                    context.pushNamed('/AddCadastro');
+                    Navigator.pushNamed(context, '/AddCadastro');
                   },
                   child: Text('Adicionar novo cadastro',
                       textAlign: TextAlign.center,
@@ -70,7 +70,7 @@ class InitialPage extends StatelessWidget {
                       backgroundColor:
                           MaterialStateProperty.all(Temas().corDosBotaos())),
                   onPressed: () {
-                    context.pushNamed('/SelectTurma');
+                    Navigator.pushNamed(context, '/SelectTurma');
                   },
                   child: Text('Pessoas cadastradas',
                       textAlign: TextAlign.center,

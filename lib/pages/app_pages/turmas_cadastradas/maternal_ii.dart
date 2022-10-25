@@ -1,4 +1,3 @@
-import 'package:build_context/build_context.dart';
 import 'package:controle_de_pagamentos/pages/data/scripts.dart';
 import 'package:controle_de_pagamentos/pages/data/temporary/modelo_de_impressao.dart';
 import 'package:controle_de_pagamentos/themes/temas.dart';
@@ -130,7 +129,7 @@ class _HomePageState extends State<CadastroMaternalII> {
                                     informacoes.add(gerente.paymentNovembro);
                                     informacoes.add(gerente.paymentDezembro);
                                     // #endregion
-                                    context.pushNamed('/AcessarDados');
+                                    Navigator.pushNamed(context, '/AcessarDados');
                                   },
                                   child: Text(
                                     aluno,
